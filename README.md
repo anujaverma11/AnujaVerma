@@ -167,8 +167,6 @@ The bootstrap framework and overrides stylesheet is putting in some unwanted pad
 
 1. By making the window thinner, you can see the bootstrap responsive layout in action. Unfortunately making it thinner causes the navigation button to appear which should, when clicked, drop down the navigation menu with the "Help" link listed. This isn't working alongside fullPage.js.
 
-2. There is padding to the left and right of the 'full page' images, as well as between the images while scrolling. Which styles or what else is causing this padding?
-
-3. Where/how should I be implementing the $.fn.fullpage function instead of how I've done it? Application.js even says I shouldn't be putting code in there. I've seen a few people suggest using on page:load instead of ready with turbolinks, others said to just remove turbolinks. Advice?
+2. Where/how should I be implementing the $.fn.fullpage function instead of how I've done it? Application.js even says I shouldn't be putting code in there. I've seen a few people suggest using on page:load instead of ready with turbolinks, others said to just remove turbolinks. Advice?
 
 I hope this helps some others, despite being a really basic tutorial ...
