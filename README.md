@@ -68,6 +68,10 @@ We need to use jquery-ui-rails gem, so we'll add this to the Gemfile too
     gem 'jquery-rails'
     gem 'jquery-ui-rails'
 
+Install the gems!
+
+    $ bundle install
+
 Add jquery.ui stylesheet to app/assets/stylesheets/application.css.scss:
 
      *= require_self
