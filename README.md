@@ -155,6 +155,14 @@ Try it out again by running the rails server
 
 Browse again to [http://localhost:3000/](http://localhost:3000/).
 
+The bootstrap framework and overrides stylesheet is putting in some unwanted padding, so we'll override that in app/assets/stylesheets/framework\_and\_overrides.css.scss
+
+    main {
+      @extend .container;
+      background-color: #eee;
+      padding: 0;
+      width: 100%;
+
 ## Now I need help
 
 1. By making the window thinner, you can see the bootstrap responsive layout in action. Unfortunately making it thinner causes the navigation button to appear which should, when clicked, drop down the navigation menu with the "Help" link listed. This isn't working alongside fullPage.js.
