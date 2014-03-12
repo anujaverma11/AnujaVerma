@@ -80,7 +80,7 @@ Add jquery.ui javascripts to app/assets/javascripts/application.js
     //= require jquery.ui.all
     //= require turbolinks
 
-Now download and add jquery.fullPage.css to the app/assets/stylesheets folder, plus download and add jquery.fullPage.js to the app/assets/javascripts folder.
+Now download and add [https://github.com/alvarotrigo/fullPage.js/tree/master](jquery.fullPage.css) to the app/assets/stylesheets folder, plus download and add [https://github.com/alvarotrigo/fullPage.js/tree/master](jquery.fullPage.js) to the app/assets/javascripts folder.
 
 Also add some backgrounds (in this case called bg1.jpg, bg2.jpg, bg3.jpg, bg4.jpg) to the app/assets/images folder. I got some examples myself from [http://unsplash.com](http://unsplash.com).
 
