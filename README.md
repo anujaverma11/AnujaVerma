@@ -163,10 +163,14 @@ The bootstrap framework and overrides stylesheet is putting in some unwanted pad
       padding: 0;
       width: 100%;
 
+Save that and if the rails server is still running just refresh the browser window. Looking better!
+
 ## Now I need help
 
 1. By making the window thinner, you can see the bootstrap responsive layout in action. Unfortunately making it thinner causes the navigation button to appear which should, when clicked, drop down the navigation menu with the "Help" link listed. This isn't working alongside fullPage.js.
 
 2. Where/how should I be implementing the $.fn.fullpage function instead of how I've done it? Application.js even says I shouldn't be putting code in there. I've seen a few people suggest using on page:load instead of ready with turbolinks, others said to just remove turbolinks. Advice?
 
-I hope this helps some others, despite being a really basic tutorial ...
+## The end
+
+I hope this helps someone, despite being a really basic tutorial ...
