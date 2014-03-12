@@ -3,7 +3,7 @@
 ### Disclaimer
 Firstly, I'm not a rails developer, I'm learning rails for fun and only really just getting started. I've basically just run through [Michael Hart's rails tutorial](http://ruby.railstutorial.org) and that's it.
 
-I'd really appreciate any feedback from _proper_ rails developers, and I already have problems in here that I need some help with. Your feedback will be appreciated in improving this tutorial. But please keep this in mind if you're following this tutorial, this may be a really bad way to do things or maybe some ways of doing things are not the 'ruby/rails way'.
+I'd really appreciate any feedback from _proper_ rails developers. Your feedback will be appreciated in improving this tutorial, even if it is simple. Please keep this in mind if you're following this tutorial, this may be a really bad way to do things or maybe some ways of doing things are not the 'ruby/rails way'.
 
 ## Tutorial
 
