@@ -161,4 +161,6 @@ Browse again to [http://localhost:3000/](http://localhost:3000/).
 
 2. There is padding to the left and right of the 'full page' images, as well as between the images while scrolling. Which styles or what else is causing this padding?
 
+3. Where/how should I be implementing the $.fn.fullpage function instead of how I've done it? Application.js even says I shouldn't be putting code in there. I've seen a few people suggest using on page:load instead of ready with turbolinks, others said to just remove turbolinks. Advice?
+
 I hope this helps some others, despite being a really basic tutorial ...
