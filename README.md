@@ -165,6 +165,13 @@ The bootstrap framework and overrides stylesheet is putting in some unwanted pad
 
 Save that and if the rails server is still running just refresh the browser window. Looking better!
 
+## Thanks
+
+* [Michael Hart's rails tutorial](http://ruby.railstutorial.org) for getting me started.
+* [George](https://github.com/fuzzmonkey) and [Matt](https://github.com/mattmacleod) for helping me with turbolinks and generally when I was being a newb.
+* [http://unsplash.com](http://unsplash.com) for some example images.
+* [Alvaro Trigo](https://github.com/alvarotrigo/fullPage.js) for his fullPage.js plugin.
+
 ## The end
 
 I hope this helps someone, despite being a really basic tutorial ...
