@@ -15,12 +15,12 @@ First we need to get a rails app up and running
     $ rails new "fullPage rails test"
     $ cd fullPage\ rails\ test/
 
-Next we will add the bootstrap-sass and rails_layout gems to the Gemfile, I just added it to the end
+Next we will add the bootstrap-sass and rails\_layout gems to the Gemfile, I just added it to the end
 
     gem 'bootstrap-sass'
     
     group :development do
-      gem 'rails_layout'
+      gem 'rails\_layout'
     end
 
 Install the Gems
@@ -46,14 +46,14 @@ Next we'll add some static pages, the Home page being the one we'll add fullPage
 Now we'll fix the static page routes to something more useful. Replace the top lines of routes.rb with the following:
 
     FullPageRailsTest::Application.routes.draw do
-      root  'static_pages#home'
-      match '/help',    to: 'static_pages#help',    via: 'get'
+      root  'static\_pages#home'
+      match '/help',    to: 'static\_pages#help',    via: 'get'
 
 This will take the user to the home static page for the root url (www.example.com/) and to the help static page for the /help url (www.example.com/help).
 
-We can also add a navigation link to the Help page by including the following line to app/views/layouts/_navigation_links.html.erb
+We can also add a navigation link to the Help page by including the following line to app/views/layouts/\_navigation\_links.html.erb
 
-    <%= link_to 'Help', help_path, class: 'navbar-brand' %>
+    <%= link\_to 'Help', help\_path, class: 'navbar-brand' %>
 
 Check everything is working again by running the rails server locally
 
@@ -70,13 +70,13 @@ We need to use jquery-ui-rails gem, so we'll add this to the Gemfile too
 
 Add jquery.ui stylesheet to app/assets/stylesheets/application.css.scss:
 
-     *= require_self
+     *= require\_self
      *= require jquery.ui.all
-     *= require_tree .
+     *= require\_tree .
 
 Add jquery.ui javascripts to app/assets/javascripts/application.js
 
-    //= require jquery_ujs
+    //= require jquery\_ujs
     //= require jquery.ui.all
     //= require turbolinks
 
@@ -112,7 +112,7 @@ Edit app/views/home.html.erb and replace what is there with the following
     <div class="section" id="section3"><h1>Title 3</h1></div>
     <div class="section" id="section4"><h1>Title 4</h1></div>
 
-Update the section and heading styles by adding the following to app/assets/stylesheets/static_pages.css.scss
+Update the section and heading styles by adding the following to app/assets/stylesheets/static\_pages.css.scss
 
     h1 {
       font-size: 5em;	
