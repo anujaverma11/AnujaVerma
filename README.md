@@ -86,6 +86,7 @@ Also add some backgrounds (in this case called bg1.jpg, bg2.jpg, bg3.jpg, bg4.jp
 
 We then need to include the fullPage.js javascripts. I've elected to do it like this, because it works alongside turbolinks, but I'd appreciate some advice on better ways to do this (without taking out turbolinks which some people might advise too).
 
+    //= require jquery.ui.all
     //= require jquery.fullPage
     
     $(document).ready(function() {
@@ -100,7 +101,7 @@ We then need to include the fullPage.js javascripts. I've elected to do it like 
         css3: true
       });
     });
-
+    //= require turbolinks
 
 Now we need to update the home page with the sections with full page backgrounds and some example titles and paddings. The details here all came from the fullPage.js examples and the github site.
 
