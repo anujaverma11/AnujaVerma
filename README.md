@@ -162,6 +162,3 @@ Browse again to [http://localhost:3000/](http://localhost:3000/).
 2. There is padding to the left and right of the 'full page' images, as well as between the images while scrolling. Which styles or what else is causing this padding?
 
 I hope this helps some others, despite being a really basic tutorial ...
-
-Regards,  
-Nathan
