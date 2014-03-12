@@ -84,11 +84,16 @@ Now download and add [jquery.fullPage.css](https://github.com/alvarotrigo/fullPa
 
 Also add some backgrounds (in this case called bg1.jpg, bg2.jpg, bg3.jpg, bg4.jpg) to the app/assets/images folder. I got some examples myself from [http://unsplash.com](http://unsplash.com).
 
-We then need to include the fullPage.js javascripts. I've elected to do it like this, because it works alongside turbolinks, but I'd appreciate some advice on better ways to do this (without taking out turbolinks which some people might advise too).
+We then need to include the fullPage.js javascripts to app/assets/javascripts as so
 
     //= require jquery.ui.all
-    //= require jquery.fullPage
-    
+    //= require jquery.fullPage   
+    //= require turbolinks 
+    //= require bootstrap
+    //= require_tree .
+
+Next we add the initalise function to a new javascript file I've called home.js and included in app/assets/javascripts. I used the following initialisation of fullPage.js.
+
     $(document).ready(function() {
       $.fn.fullpage({
         menu: '.navbar',
@@ -101,7 +106,10 @@ We then need to include the fullPage.js javascripts. I've elected to do it like 
         css3: true
       });
     });
-    //= require turbolinks
+
+Unfortunately turbolinks don't play nicely with fullPage.js, so I've removed all references of them from my project. I removed the turbolinks gem from the Gemfile, the reference to the turbolinks javascripts from app/assets/javascripts/application.js, and both instances in app/views/layouts/application.html.erb of:
+
+    , "data-turbolinks-track" => true 
 
 Now we need to update the home page with the sections with full page backgrounds and some example titles and paddings. The details here all came from the fullPage.js examples and the github site.
 
@@ -164,12 +172,6 @@ The bootstrap framework and overrides stylesheet is putting in some unwanted pad
       width: 100%;
 
 Save that and if the rails server is still running just refresh the browser window. Looking better!
-
-## Now I need help
-
-1. By making the window thinner, you can see the bootstrap responsive layout in action. Unfortunately making it thinner causes the navigation button to appear which should, when clicked, drop down the navigation menu with the "Help" link listed. This isn't working alongside fullPage.js.
-
-2. Where/how should I be implementing the $.fn.fullpage function instead of how I've done it? Application.js even says I shouldn't be putting code in there. I've seen a few people suggest using on page:load instead of ready with turbolinks, others said to just remove turbolinks. Advice?
 
 ## The end
 
