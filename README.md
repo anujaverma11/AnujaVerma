@@ -86,7 +86,7 @@ Add jquery.ui javascripts to app/assets/javascripts/application.js
 
 Now download and add [jquery.fullPage.css](https://github.com/alvarotrigo/fullPage.js/tree/master) to the app/assets/stylesheets folder, plus download and add [jquery.fullPage.js](https://github.com/alvarotrigo/fullPage.js/tree/master) to the app/assets/javascripts folder.
 
-Also add some backgrounds (in this case called bg1.jpg, bg2.jpg, bg3.jpg, bg4.jpg) to the app/assets/images folder. I got some examples myself from [http://unsplash.com](http://unsplash.com).
+Also add some backgrounds (in this case called bg1.jpg, bg2.jpg, bg3.jpg, bg4.jpg) to the app/assets/images folder. I got some examples myself from [unsplash.com](http://unsplash.com).
 
 Next we add the initalise function to a new javascript file I've called home.js and included in app/assets/javascripts. I used the following initialisation of fullPage.js.
 
