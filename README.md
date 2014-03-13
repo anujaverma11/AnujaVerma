@@ -84,7 +84,7 @@ Add jquery.ui javascripts to app/assets/javascripts/application.js
     //= require jquery.ui.all
     //= require turbolinks
 
-Now download and add [jquery.fullPage.css](https://github.com/alvarotrigo/fullPage.js/tree/master) to the app/assets/stylesheets folder, plus download and add [jquery.fullPage.js](https://github.com/alvarotrigo/fullPage.js/tree/master) to the app/assets/javascripts folder.
+Now download and add [jquery.fullPage.css](https://github.com/alvarotrigo/fullPage.js) to the app/assets/stylesheets folder, plus download and add [jquery.fullPage.js](https://github.com/alvarotrigo/fullPage.js) to the app/assets/javascripts folder.
 
 Also add some backgrounds (in this case called bg1.jpg, bg2.jpg, bg3.jpg, bg4.jpg) to the app/assets/images folder. I got some examples myself from [unsplash.com](http://unsplash.com).
 
@@ -107,7 +107,7 @@ Unfortunately turbolinks don't play nicely with fullPage.js, so I've removed all
 
     , "data-turbolinks-track" => true 
 
-Now we need to update the home page with the sections with full page backgrounds and some example titles and paddings. The details here all came from the fullPage.js examples and the github site.
+Now we need to update the home page with the sections with full page backgrounds and some example titles and paddings. The details here all came from the fullPage.js [examples](http://alvarotrigo.com/fullPage) and the [github](https://github.com/alvarotrigo/fullPage.js) site.
 
 Edit app/views/home.html.erb and replace what is there with the following
 
