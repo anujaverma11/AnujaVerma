@@ -169,7 +169,7 @@ The bootstrap framework and overrides stylesheet is putting in some unwanted pad
 
 Save that and if the rails server is still running just refresh the browser window. Looking better!
 
-Now though, it seems this script will run on every page, which we maybe don't want if we're using 'sections' in other pages for example. To address this I've just added wrapped the front page in a class and only call the initialisation of fullPage.js when that class is present on the page.
+Now though, it seems this script will run on every page, which we maybe don't want if we're using 'sections' in other pages for example. To address this I've just wrapped the front page in a div with a class name and only call the initialisation of fullPage.js when that class name is present on the page.
 
 So the updated app/assets/javascripts/home.js is as follows
 
