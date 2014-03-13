@@ -103,9 +103,17 @@ Next we add the initalise function to a new javascript file I've called home.js 
       });
     });
 
-Unfortunately turbolinks don't play nicely with fullPage.js, so I've removed all references of them from my project. I removed the turbolinks gem from the Gemfile, the reference to the turbolinks javascripts from app/assets/javascripts/application.js, and both instances in app/views/layouts/application.html.erb of:
+### Removing turbolinks
+
+Unfortunately turbolinks don't play nicely with fullPage.js, so I've removed all references of them from my project. 
+
+- I removed the turbolinks gem from the Gemfil
+- I removed the reference to the turbolinks javascripts from app/assets/javascripts/application.js 
+- I removed both instances in app/views/layouts/application.html.erb of:
 
     , "data-turbolinks-track" => true 
+
+### Add the sections, titles, images and styles
 
 Now we need to update the home page with the sections with full page backgrounds and some example titles and paddings. The details here all came from the fullPage.js [examples](http://alvarotrigo.com/fullPage) and the [github](https://github.com/alvarotrigo/fullPage.js) site.
 
@@ -168,6 +176,8 @@ The bootstrap framework and overrides stylesheet is putting in some unwanted pad
       width: 100%;
 
 Save that and if the rails server is still running just refresh the browser window. Looking better!
+
+### Limit the javascript to just the home page
 
 Now though, it seems this script will run on every page, which we maybe don't want if we're using 'sections' in other pages for example. To address this I've just wrapped the front page in a div with a class name and only call the initialisation of fullPage.js when that class name is present on the page.
 
