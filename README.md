@@ -169,6 +169,36 @@ The bootstrap framework and overrides stylesheet is putting in some unwanted pad
 
 Save that and if the rails server is still running just refresh the browser window. Looking better!
 
+Now though, it seems this script will run on every page, which we maybe don't want if we're using 'sections' in other pages for example. To address this I've just added wrapped the front page in a class and only call the initialisation of fullPage.js when that class is present on the page.
+
+So the updated app/assets/javascripts/home.js is as follows
+
+    $(document).ready(function() {
+      if ( $('.fullpage-home').length ) {
+        $.fn.fullpage({
+          menu: '.navbar',
+          verticalCentered: true,
+          resize : false,
+          anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
+          navigation: true,
+          navigationPosition: 'right',
+          navigationTooltips:['firstPageTooltip', 'secondPageTooltip', 'thirdPageTooltip', 'fourthPageTooltip'],
+          css3: true
+        });
+      }
+    });
+
+And the updated app/views/static_pages/home.html.erb is as follows
+
+    <div class="fullpage-home">
+      <div class="section" id="section1"><h1>Title 1</h1></div>
+      <div class="section" id="section2"><h1>Title 2</h1></div>
+      <div class="section" id="section3"><h1>Title 3</h1></div>
+      <div class="section" id="section4"><h1>Title 4</h1></div>
+    </div>
+
+No we can use a debugger like firebug, put a breakpoint on the home.js line at "$.fn.fullpage", and see it won't run when you go to the help page but it will run if you go to the home page.
+
 ## Thanks
 
 * [Michael Hart's rails tutorial](http://ruby.railstutorial.org) for getting me started.
