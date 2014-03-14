@@ -209,6 +209,12 @@ And the updated app/views/static_pages/home.html.erb is as follows
 
 No we can use a debugger like firebug, put a breakpoint on the home.js line at "$.fn.fullpage", and see it won't run when you go to the help page but it will run if you go to the home page.
 
+## Demo
+
+I made a couple more changes to the Gemfile and production.rb to get it working with heroku.
+
+You can check out the live demo at [http://fullpagejs-rails-bootstrap.herokuapp.com/](http://fullpagejs-rails-bootstrap.herokuapp.com/).
+
 ## Thanks
 
 * [Michael Hart's rails tutorial](http://ruby.railstutorial.org) for getting me started.
