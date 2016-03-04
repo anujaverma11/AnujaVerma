@@ -7,7 +7,7 @@ $(document).ready(function() {
       anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
       navigation: true,
       navigationPosition: 'right',
-      navigationTooltips:['firstPageTooltip', 'secondPageTooltip', 'thirdPageTooltip', 'fourthPageTooltip'],
+      navigationTooltips:['Home', 'Skills', 'Projects', 'Contact'],
       css3: true
     });
   }
