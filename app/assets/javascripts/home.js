@@ -2,7 +2,7 @@ $(document).ready(function() {
   if ( $('.fullpage-home').length ) {
     $.fn.fullpage({
       menu: '.navbar',
-      verticalCentered: true,
+      verticalCentered: false,
       resize : false,
       anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
       navigation: true,
