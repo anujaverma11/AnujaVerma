@@ -148,7 +148,7 @@ html, body {
     position: absolute;
     color: #fff;
     font-size: 14px;
-    font-family: arial, helvetica, sans-serif;
+    font-family: Armata, helvetica, sans-serif;
     top: -2px;
 }
 .fullPage-tooltip.right {
@@ -156,4 +156,25 @@ html, body {
 }
 .fullPage-tooltip.left {
     left: 20px;
+}
+
+.contacts {
+    width: 400px;
+}
+.left {
+    max-width: 100%;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    -ms-text-overflow:ellipsis;
+    float: left;
+    color: white;
+    font-family: Armata;
+}
+.right {
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    -ms-text-overflow:ellipsis;
+    text-align: right;
 }
