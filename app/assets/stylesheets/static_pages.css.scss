@@ -69,36 +69,13 @@ h1 {
 }
 
 #section3 {
-	background-image: image-url("");
+  background-size: cover;
+  background-image: image-url("back.jpg");
   color: #fff;
 }
 
 #section4 {
-	background-image: image-url("back.jpg");
+	background-size: cover;
+  background-image: image-url("back.jpg");
   color: #fff;
-}
-
-.part1 {
-    width:50%;
-    height: 50%;
-    float: left;
-    background-image: image-url("Proj1.jpg");
-}
-.part2 {
-    width:50%;
-    height: 50%;
-    float: left;
-    background-image: image-url("Proj2.jpg");
-}
-.part3 {
-    width:50%;
-    height: 50%;
-    float: left;
-    background-image: image-url("Proj3.jpg");
-}
-.part4 {
-    width:50%;
-    height: 50%;
-    float: left;
-    background-image: image-url("Proj4.jpg");
 }

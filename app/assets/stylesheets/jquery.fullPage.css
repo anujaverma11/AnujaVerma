@@ -10,12 +10,12 @@ html, body {
 	/* Touch detection for Windows 8 */
 	-ms-touch-action: none;
 }
-/*.section {
+.section {
     position: relative;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-}*/
+}
 .slide {
     float: left;
 }
@@ -59,12 +59,12 @@ html, body {
     left: 15px;
     width: 0;
     border-width: 38.5px 34px 38.5px 0;
-    border-color: transparent #fff transparent transparent;
+    border-color: transparent #FF8C00 transparent transparent;
 }
 .controlArrow.next {
     right: 15px;
     border-width: 38.5px 0 38.5px 34px;
-    border-color: transparent transparent transparent #fff;
+    border-color: transparent transparent transparent #FF8C00;
 }
 .scrollable {
     overflow: scroll;
