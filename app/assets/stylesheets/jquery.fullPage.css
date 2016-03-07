@@ -163,18 +163,7 @@ html, body {
 }
 .left {
     max-width: 100%;
-    white-space:nowrap;
-    overflow:hidden;
-    text-overflow:ellipsis;
-    -ms-text-overflow:ellipsis;
     float: left;
     color: white;
     font-family: Armata;
-}
-.right {
-    white-space:nowrap;
-    overflow:hidden;
-    text-overflow:ellipsis;
-    -ms-text-overflow:ellipsis;
-    text-align: right;
 }
