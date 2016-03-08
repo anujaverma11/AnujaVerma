@@ -6739,11 +6739,11 @@ h1 {
 
 #section1{
 	background-size: cover;
-	background-image: image-url("imgs/back.jpg");
+	background-image: image-url("back.jpg");
 }
 
 #section1 {
-	background-image: image-url("imgs/back.jpg");
+	background-image: image-url("back.jpg");
 }
 
 #section2 {
@@ -6757,13 +6757,13 @@ h1 {
 
 #section3 {
   background-size: cover;
-  background-image: image-url("imgs/back.jpg");
+  background-image: image-url("back.jpg");
   color: #fff;
 }
 
 #section4 {
 	background-size: cover;
-  background-image: image-url("imgs/back.jpg");
+  background-image: image-url("back.jpg");
   color: #fff;
 }
 
