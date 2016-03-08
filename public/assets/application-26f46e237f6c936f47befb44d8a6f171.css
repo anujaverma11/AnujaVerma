@@ -6763,7 +6763,7 @@ h1 {
 
 #section4 {
 	background-size: cover;
-  background-image: image-url("back.jpg");
+  background-image: image-url("../imgs/back.jpg");
   color: #fff;
 }
 
